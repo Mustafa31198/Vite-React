@@ -1,0 +1,132 @@
+<div class="absolute top-0 right-0 p-4 overflow-hidden sm:ml-64 min-h-screen bg-orange-50">
+    <div class="container py-8 px-4">
+        <h1 class="text-4xl font-bold  ">
+            Learn, Cook, Eat Your Food</h1>
+        <div class="sm:hidden mt-8">
+            <label for="tabs" class="sr-only">Select your country</label>
+            <select id="tabs"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option value="Beef">Beef</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Goat">Goat</option>
+                <option value="Lamb">Lamb</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Pork">Pork</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Side">Side</option>
+                <option value="Starter">Starter</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+            </select>
+        </div>
+        <ul
+            class="sm:flex hidden mt-8 flex-wrap gap-4  font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+            <li class="me-2"><a aria-current="page"
+                    class="inline-block catLink px-4 py-2  border transition-all hover:shadow-xl shadow duration-300 rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300 active"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                        [routerLink]="['/category/all']">All</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                        [routerLink]="['/category/beef']">Beef</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/breakfast']">Breakfast</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/chicken']">Chicken</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/dessert']">Dessert</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/goat']">Goat</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/lamb']">Lamb</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/miscellaneous']">Miscellaneous</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/pasta']">Pasta</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/pork']">Pork</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/seafood']">Seafood</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/side']">Side</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/starter']">Starter</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/vegan']">Vegan</a></li>
+            <li class="me-2"><a
+                    class="   inline-block px-4 py-2 catLink border-gray-400 border transition-all hover:shadow-xl shadow duration-300  rounded-full hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+                    routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                    [routerLink]="['/category/vegetarian']">Vegetarian</a></li>
+        </ul>
+
+
+
+
+   
+
+        <div class=" meals mt-24 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-20 ">
+  
+@for (card of meal.meals; track $index) {
+
+    <div
+    class="meal h-auto text-center hover:shadow-xl group  hover:scale-105 duration-300 transition-all bg-white p-12 pb-4  rounded-[35px] ">
+    <img [src]="card.strMealThumb"
+        class="w-full group-hover:rotate-[360deg] duration-700 transition-all rounded-full drop-shadow-xl  -translate-y-20  shadow-2xl"
+        alt="">
+    <h3 class="font-semibold -mt-12 font-Pacifico tracking-wider text-xl">{{card.strMeal.slice(1,12)}}</h3>
+    <h5 class="flex justify-center items-center gap-2 text-emerald-600"> <svg stroke="currentColor"
+            fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z">
+            </path>
+        </svg> {{card.strArea}}</h5>
+
+
+        <button 
+        class="text-white bg-emerald-600 mt-4 hover:bg-emerald-600 font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300  px-8 py-2 rounded-full"><a
+        routerLink="/details/{{card.idMeal}}"> View Recipe</a> </button>
+
+
+</div>
+}
+</div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
